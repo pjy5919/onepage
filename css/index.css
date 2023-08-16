@@ -15,11 +15,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.cardtop{font-size: 25px;
+.cardtop{
+  font-size: 25px;
   padding-top:60px;
   display:block;
   text-align: center;
-  font-weight: bold;}
+  font-weight: bold;
+}
 
 /*top button---------------------------------*/
 
@@ -54,7 +56,8 @@ header {
   width:100%;
   height: 60px;
   box-shadow: 1px 1px 10px 0 #000;
-  backdrop-filter: blur(5px);}
+  backdrop-filter: blur(5px);
+}
 
 nav {/* 메뉴바 */
   width: 1200px;
@@ -73,7 +76,7 @@ nav {/* 메뉴바 */
 }
 .menu li a {
   color:#fff;
-  font-size: 15px;
+  font-size: 18px;
   opacity: 0.5;
   transition: 0.5s;
 }
@@ -90,6 +93,24 @@ main{
   width:100%;
   height:auto;
 }
+#mainview{
+  background: url(../image/KBANK.jpg);
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(88, 255, 88);
+}
+
+#mainview img{
+  opacity: 0;
+  transition: 1.5s;
+}
+#mainview:hover img{
+  opacity: 100;
+  transform: scale(1.1);
+}
 #main-content{
   width: 100%;
   height: 600px;
@@ -98,6 +119,7 @@ main{
   align-items: center;
   position: relative;
 }
+
 .captoion
 {left:40px;
   white-space:nowrap;
@@ -126,14 +148,16 @@ text-align: center;
   font-weight: bold;
 }
 main .mv{
-  animation: ani1 3s infinite;}
+  animation: ani1 3s infinite;
+}
 
 
 
 /* 메인 뷰 이미지 악세사리 도형 */
 main .start img{
   position: absolute;
-  animation: ani2 2s infinite;}
+  animation: ani2 2s infinite;
+}
 
 main .start img:nth-child(1){
   top:10%;
@@ -179,11 +203,13 @@ main .start img:nth-child(4){
 @keyframes ani1{
 0%{transform: translateY(0);}
 50%{transform: translateY(-40px);}
-100%{transform: translateY(0);}}
+100%{transform: translateY(0);}
+}
 @keyframes ani2{
-  0%{transform: scale(1);}
-  50%{transform: scale(1.5);}
-  100%{transform: scale(1);}}
+0%{transform: scale(1);}
+50%{transform: scale(1.5);}
+100%{transform: scale(1);}
+}
 
 
 /*section______________conten1*/
@@ -191,13 +217,15 @@ section {
   width:100%;
   padding-top:60px;
   margin:50px auto;
-  text-align:center;}
+  text-align:center;
+}
 
 #nametext
 { white-space:nowrap;
   width: 100%;
   background-color: #001438;
-  font-weight: bold;}
+  font-weight: bold;
+}
 
 section h2{
   font-weight:bold;
@@ -217,18 +245,24 @@ section h2{
   text-align: left;
 }
 
-.text li{padding-left: 50px;}
+.text li{
+  padding-left: 50px;
+}
 .text p{
   font-weight: bold;
   font-size:30px;
 color:rgb(88, 255, 88);
-margin-bottom: 30px;}
-.text i{animation: bulb 2s infinite;}
+margin-bottom: 30px;
+}
+.text i{
+  animation: bulb 2s infinite;
+}
 
 @keyframes bulb{
-  0%{transform: scale(1.5);}
-  50%{transform: scale(1);}
-  100%{transform: scale(1.5);}}
+0%{transform: scale(1.5);}
+50%{transform: scale(1);}
+100%{transform: scale(1.5);}
+}
 
 .about span:nth-child(1){flex:1;}
 .about span:nth-child(1){flex:1;}
@@ -237,7 +271,8 @@ margin-bottom: 30px;}
   padding-right: 30px;
   width: 700px;
   height:400px;
-  display:flex;}
+  display:flex;
+}
 
 .galley li{
   border-radius: 10px;
@@ -296,12 +331,12 @@ margin-bottom: 30px;}
   transition: 0.5s;
   box-sizing:border-box;
 }
-.card:hover .content{
-  top:0;}
+.card:hover .content{top:0;}
 
 .card:nth-child(1) .content{background: linear-gradient(to top,#005a1e, transparent);}
 .card:nth-child(2) .content{background: linear-gradient(to top,#005a1e, transparent);}
 .card:nth-child(3) .content{background: linear-gradient(to top,#005a1e, transparent);}
+
 .content h2{
   color:#fbff00;
   font-size:20px;
@@ -312,7 +347,7 @@ margin-bottom: 30px;}
   display: block;
   font-size:13px;
   margin-top:10px;
-  font-weight: bold;
+  font-weight:lighter;
 }
 .sns a{
   display: inline-block;
@@ -354,61 +389,64 @@ margin-bottom: 30px;}
 #bebefite{
   margin-top: 100px;
   background-color:#e0e0e0;
-  }
+}
+#bebefite .cardtop{
+  padding-top: 100px;
+  font-size:30px;
+  color:#001438;
+  font-weight: bold;
+}
+
+.bebdf{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:50px 0;
+  color:#040713;
+  margin-bottom:100px;
+}
   
-  #bebefite .cardtop{
-    padding-top: 100px;
-    font-size:30px;
-    color:#001438;
+.boxall{
+  display:flex;
+}
+.box{
+  margin: 10px;
+  top:0;
+  left:50%;
+  justify-content: center;
+  align-items: center;}
+  
+.boxall li{
+  border-radius: 50%;
+  background: #e0e0e0;
+  box-shadow:  41px 41px 82px #bebebe,-41px -41px 82px #ffffff;
+  display:block;
+  margin: 30px;
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.boxall li span{
+  display: block;
+  font-size: 14px;
+  color:#333333;
+  }
+
+.boxall li p{
+  font-size:18px;
   font-weight: bold;}
-
-  .bebdf{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:50px 0;
-    color:#040713;
-    margin-bottom:100px;}
   
-  .boxall{display:flex;}
-  .box{
-    margin: 10px;
-    top:0;
-    left:50%;
-    justify-content: center;
-    align-items: center;}
-  
-  .boxall li{
-    border-radius: 50%;
-    background: #e0e0e0;
-    box-shadow:  41px 41px 82px #bebebe,-41px -41px 82px #ffffff;
-    display:block;
-    margin: 30px;
-    width: 200px;
-    height:200px;
-    border-radius: 50%;
-    transition: 0.5s;
+.boxall li:hover{
+  color:rgb(88, 255, 88);
+  transform: scale(1.5);
+  background-color:#040713;
   }
-  .boxall li span{
-    display: block;
-    font-size: 14px;
-    color:#333333;
-  }
-
-  .boxall li p{
-    font-size:18px;
-    font-weight: bold;}
-  
-  .boxall li:hover{
-    color:rgb(88, 255, 88);
-    transform: scale(1.5);
-    background-color:#040713;
-  }
-  .boxall li:hover span{
-    color:#fff;
-  }
+.boxall li:hover span{
+  color:#fff;
+}
 /* 고객센터ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 #info{width:1200px;
@@ -484,7 +522,6 @@ align-items: center;}
   height:300px;
   font-size: 14px;
   color:rgb(88, 255, 88);
-
 }
 .serch input[type=submit]:active{
   background-color:#040713;
@@ -500,8 +537,11 @@ footer{
   justify-content:center;
   color:#adadad;
   display: flex;
-  font-size: 12px;}
+  font-size: 12px;
+}
 
 
 
-address{width:1200px;}
+address{
+  width:1200px;
+}
