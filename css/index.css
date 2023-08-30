@@ -529,6 +529,10 @@ align-items: center;}
   border: 1px solid #fff;
 }
 
+.serch textarea:focus::placeholder{
+  opacity: 0;
+
+}
 /* footer _________________*/
 footer{
   width: 100%;
